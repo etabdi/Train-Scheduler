@@ -1,0 +1,100 @@
+body{
+ background-color: rgb(120, 120, 124);
+ background-image: linear-gradient(to bottom right, rgb(83, 83, 72), rgb(27, 27, 2));
+
+
+}
+
+.card-header{
+background-color:orange;
+padding: 10px;
+color:black;
+font-size: 24px;
+font-style: oblique;
+}
+
+#add-user{
+background-color:black;
+color:white;
+border:solid;
+margin:10px;
+padding:5px 30px 5px 30px;
+
+
+}
+#outputForm{
+    background-color:orange;
+    color:black;
+  
+}
+#name{
+    background-color: black;
+}
+.table{
+   font-size:15px;
+}
+#inputForm{
+
+   padding:3px;
+   background-color:orange;
+   margin-top:2px;  
+    display:block;
+    overflow:auto;
+    
+  
+}
+#outputtForm{
+
+    padding:3px;
+    background-color: rgb(206, 206, 209);
+    margin-top:2px;   
+   
+ }
+ .clock {
+   
+    color: #17D4FE;
+    font-size: 25px;
+    letter-spacing: 7px;
+    text-align:center;
+}
+
+.form-group {
+  padding: 2px;
+
+}
+#main{
+    
+    padding:5px 30px 5px 30px ;
+    margin-top:5px;
+    margin-bottom:60px;
+   
+    width:100%;
+    border-radius:4px;
+      }
+
+.card-body{
+    padding: 0px 40px 0px 40px;
+}
+
+header{
+
+ background-color: black;
+ color:white;
+ padding: 10px;
+
+}
+
+#form{
+    
+    padding:10px;
+    margin-top:10px;
+    
+}
+h2{
+ font-size: 48px;
+ margin-top:20px;
+ text-align: center;
+ font-style: oblique;
+
+}
+ 
