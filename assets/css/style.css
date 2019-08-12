@@ -1,5 +1,5 @@
 body{
- background-color: rgb(120, 120, 124);
+ 
  background-image: linear-gradient(to bottom right, rgb(83, 83, 72), rgb(27, 27, 2));
 
 
@@ -13,7 +13,7 @@ font-size: 24px;
 font-style: oblique;
 }
 
-#add-user{
+#add-train{
 background-color:black;
 color:white;
 border:solid;
@@ -32,6 +32,7 @@ padding:5px 30px 5px 30px;
 }
 .table{
    font-size:15px;
+   width:100%;
 }
 #inputForm{
 
@@ -82,6 +83,7 @@ header{
  color:white;
  padding: 10px;
 
+
 }
 
 #form{
@@ -97,4 +99,6 @@ h2{
  font-style: oblique;
 
 }
- 
+#td-add {
+  margin:25px;
+}
