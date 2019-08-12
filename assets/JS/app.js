@@ -29,28 +29,21 @@ event.preventDefault();
      firstTrainTime=$("#firstTrain-time").val().trim();
     frequency=$("#Frequency").val().trim();
 
-    var timeConverted=moment(firstTrainTime,"HH:mm").subtract(1,"years");
-    console.log(timeConverted)
-    var diffTime = moment().diff(timeConverted, "m");
-    console.log(diffTime)
-    var timeRemainder =diffTime % frequency ;
-    var tminutes= frequency - timeRemainder;
-    console.log(timeRemainder+"timeremainder");
-    var nextArriva = moment().add(tminutes, "m").format("hh:mm"); 
-
    database.ref().push(
     {
         trainName:trainName,
         destination:destination,
         firstTrainTime:firstTrainTime,
         frequance:frequency,
-        nextArriva:nextArriva,
-        minitsAway:tminutes,  
-        
+          
     });  
-     
-    $("form")[0].reset();
 
+    $("#Frequency").val("");
+    $("#train-name").val("");
+    $("#destination").val("");
+    $("#firstTrain-time").val("");
+    $("#Frequency").val(" ");
+    
     console.log(trainName);
     console.log(destination);
     console.log(firstTrainTime);
@@ -58,23 +51,38 @@ event.preventDefault();
 
 });
 
+database.ref().on("child_added", function(childSnapshot, prevChildKey){
 
+    var tfrequance = childSnapshot.val(). frequance;
+    var trainName = childSnapshot.val().trainName;
+    var firstTrainTime=childSnapshot.val().firstTrainTime;
+    var destination=childSnapshot.val().destination;
 
+    timeConverted=moment(firstTrainTime,"HH:mm").subtract(1,"years");
+    
+    var diffTime = moment().diff(moment(timeConverted), "m");
+
+    var timeRemainder =diffTime % tfrequance ;
+
+    var tminutes= tfrequance - timeRemainder;
+
+    console.log(timeRemainder+"timeremainder");
+
+    var nextArrival = moment().add(tminutes, "minutes").format('hh:mm'); 
        
-database.ref().on("child_added", function(childSnapshot) {
-    $("#td-add").append("<tr><td>"+childSnapshot.val().trainName
-    +"<td>"+childSnapshot.val().destination
-    +"<td>"+childSnapshot.val().frequance
-    +"<td>"+childSnapshot.val().nextArriva
-    +"<td>"+childSnapshot.val().minitsAway+"</td></tr>");
-});
+    $("#td-add").append("<tr><td>"+trainName
+    +"<td>"+destination
+    +"<td>"+tfrequance
+    +"<td>"+nextArrival
+    +"<td>"+tminutes+"</td></tr>");
 
+});
 
 function showTime(){
     var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+    var s = date.getSeconds(); 
     var session = "AM";
     
     if(h == 0){
