@@ -101,4 +101,14 @@ h2{
 }
 #td-add {
   margin:25px;
+  
 }
+tr:hover {
+    background: rgb(182, 177, 177);
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
