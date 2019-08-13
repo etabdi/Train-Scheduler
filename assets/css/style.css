@@ -99,13 +99,8 @@ h2{
  font-style: oblique;
 
 }
-#td-add {
-  width:auto;
-  
-}
 tr:hover {
     background: rgb(182, 177, 177);
+    
 }
 
-  
-  tr:nth-child(even) {background-color: #f2f2f2;}
