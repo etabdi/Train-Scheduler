@@ -16,4 +16,3 @@ Administrators should be able to submit the following:
  My portfolio link"https://etabdi.github.io/Bootstrap-Portfolio/"
  
 
-
