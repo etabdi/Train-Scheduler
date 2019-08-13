@@ -60,23 +60,23 @@
                          </div>
                           
                             <div class="card-body">            
-                                <!-- Sign-up Form (note the various input "types")-->
+                            
                                 <form role="form">
                                 <div class="form-group row">
                                     <label for="name-input">Train Name</label>
                                     <input class="form-control" id="train-name" type="text">
                                 </div>
                                 <div class="form-group row">
-                                    <label for="email-input">Destination</label>
+                                    <label >Destination</label>
                                     <input class="form-control" id="destination" type="text">
                                 </div>
                                 <div class="form-group row">
-                                    <label for="age-input">First Train time(HH:MM:-military Time)</label>
-                                    <input class="form-control" id="firstTrain-time" type="number">
+                                    <label for="time">First Train time(HH:MM:-military Time)</label>
+                                    <input class="form-control" id="firstTrain-time" type="time">
                                 </div>
                                 <div class="form-group row">
-                                    <label for="comment-input">Frequency</label>
-                                    <input class="form-control" id="Frequency" ></input>
+                                    <label for="name-input">Frequency</label>
+                                    <input class="form-control" id="Frequency" type="number" ></input>
                                 </div>
                                 <button class="btn btn-default" id="add-train" type="submit">Submit</button>
                                 </form>
@@ -90,12 +90,6 @@
       </div>
 
     </div>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#reserved-urls -->
-
-<!-- Initialize Firebase -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>

@@ -1,6 +1,6 @@
 body{
  
- background-image: linear-gradient(to bottom right, rgb(83, 83, 72), rgb(27, 27, 2));
+ background-image: linear-gradient(to bottom right, rgb(12, 3, 29), rgb(14, 2, 27));
 
 
 }
@@ -100,15 +100,12 @@ h2{
 
 }
 #td-add {
-  margin:25px;
+  width:auto;
   
 }
 tr:hover {
     background: rgb(182, 177, 177);
 }
-th, td {
-    text-align: left;
-    padding: 8px;
-  }
+
   
   tr:nth-child(even) {background-color: #f2f2f2;}
