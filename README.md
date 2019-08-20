@@ -10,8 +10,11 @@ Adding trains
 
 Administrators should be able to submit the following:
   -Train Name
+  
   -Destination
+  
   -First Train Time (Am/Pm)
+  
   -Frequency 
   
  My portfolio link"https://etabdi.github.io/Bootstrap-Portfolio/"
